@@ -1,0 +1,35 @@
+export default (commonData = {
+  ToastMessages: {
+    no_internet: "No internet connectivity detected. Please try again.",
+    no_name: "Please enter name.",
+    no_email: "Please enter email.",
+    no_number: "Please enter mobile number.",
+    valid_email: "Please enter valid email.",
+    valid_number: "Please enter Valid mobile number.",
+    no_age: "Please enter your age.",
+    no_gender: "Please select your gender.",
+    accept_condition: "Please accept terms and policies.",
+  },
+  api_endpoint: {
+    signup: "Common_API/patientSaveV2",
+    search: "patient/searchDoctors_app",
+    verify: "Common_API/patient_signinV2/",
+    otp_verify_signup: "index/verifypatientSigninotpv2",
+    otp_verify: "index/verifypatientSigninotp",
+    resend_otp: "index/sendpatientOtpv2",
+    book_appointment: "Common_API/bookAppointmentByPatient",
+    get_prescriptions: 'index.php/Common_API/doctorPrescription/',
+    Prescription_detail: 'index.php/Common_API/doctorDescription/',
+    getMyDoctor: "index.php/Common_API/getMyDoctorsList/",
+    getAllPayments:"index.php/Common_API/getAllPayments/",
+  },
+  regex: {
+    email: /^[a-zA-Z][a-zA-Z0-9_+]*(\.[a-zA-Z][a-zA-Z0-9_]*)?@[a-z][a-zA-Z-0-9]*\.[a-z]+(\.[a-z]+)?$/,
+    mobile_number: /([+]?\d{1,2}[.-\s]?)?(\d{3}[.-]?){2}\d{4}/,
+  },
+  doctor: {
+    name: "",
+    doctor_id: "",
+    details: "",
+  },
+});
